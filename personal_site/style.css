@@ -26,7 +26,6 @@ a {
 .box {
     display: flex;
     justify-content: space-evenly;
-    align-self:last baseline;
     border:.5em double;
     border-left: 0;
     border-right: 0;
@@ -70,3 +69,13 @@ footer {
       
     }
   }
+
+.headtop {
+    position: fixed;
+    top: 1px;
+    width: 100%;
+}
+
+.headtop + .box {
+    padding-top: 102px;
+}
